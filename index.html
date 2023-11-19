@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&family=Poppins:wght@500;600&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <!--Btn hamburger menu-->
+    <script src="https://kit.fontawesome.com/de8de52639.js" crossorigin="anonymous"></script>
+    <title>Mangandaralam Sakti || mini-project-travel</title>
+  </head>
+  <body>
+    
+    <header>
+      <a href="#home">Wanderlust</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" class="active" id="linkNav">Home</a>
+          </li>
+          <li>
+            <a href="#ourpackage" id="linkNav">Our Package</a>
+          </li>
+          <li>
+            <a href="#callUs" id="linkNav">Call Us</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!--Hamburger menu-->
+      <button type="submit" id="btn">
+        <a><i class="fa-solid fa-bars"></i></a>
+      </button> 
+      
+    </header>
+    
+    <!--Home section-->
+    <section class="home" id="home">
+      <div class="heading-travel">
+        <h1>Discover the World</h1>
+        <p> Your Journey is Our Passion</p>
+      </div>
+      
+      <div class="main-layout">
+        <div class="banner">
+          <div class="banner-img">
+            <img name="slide">
+          </div>
+          <div class="banner-testimoni">
+            <p><i>"Liburan jadi menyenangkan bersama Travel Agentku."</i></p>
+            <div class="testimoni">
+              <i class="fa-regular fa-user"></i>
+              <div class="capt">
+                <h6>Vanda nuryana</h6>
+                <p>Ibu Rumah Tangga, 28</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="banner-feature">
+              <h6>Manfaat istimewa yang akan anda terima melalui layanan travel eksklusif yang kami tawarkan</h6>
+              <div class="feature-opt">
+               <span>1</span><p>Pengalaman perjalanan yang menyenangkan, mulai dari pemesanan hingga akomodasi</p>
+              </div>
+              <div class="feature-opt">
+                <span>2</span><p>Destinasi perjalanan yang unik, kami menyediakan destinasi wisata istimewa yang akan memberikan pengalaman luar biasa untuk anda</p>
+                </div>
+                <div class="feature-opt">
+                 <span>3</span><p>Layanan pelanggan adalah prioritas kami, pemandu lokal hingga akomodasi bintang lima dirancang untuk kenyamanan anda</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="form-layout">
+          <div class="form-validation">
+            <h3>Contact Us</h3>
+            <p>Sales akan menghubungi anda 1 x 24 jam setelah data anda diterima.</p>
+            
+         <form action="/" method="POST" name="myForm">
+              <label for="nama">Your name :</label>
+              <input type="text" name="nama" placeholder="First and last Name" id="nama">
+              <span id="messegeName"></span>
+              <label for="email">Email Address :</label>
+              <input type="email" name="email" placeholder="example@gmail.com" id="email">
+              <span id="messegeEmail"></span>
+              <label>What are you interest in ?</label>
+              <div class="select-container">
+                <select class="select-box" name="option">
+                  <option value="">Select option</option>
+                  <option value="Bali">Bali</option>
+                  <option value="Bandung">Bandung</option>
+                  <option value="Surabaya">Surabaya</option>
+                  <option value="Lombok">Lombok</option>
+                  <option value="Singapore">Singapore</option>
+                </select>
+                  <div class="icon-container">
+                   <i class="fa-solid fa-caret-down"></i>
+                  </div>
+              </div>
+              <span id="messegeOption"></span>
+              <button type="submit" onclick="send()" id="btnForm">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Our package section-->
+    <section class="ourpackage" id="ourpackage">
+      <h1>Our Package</h1>
+      
+    </section>
+    
+      <div class="container-location">
+        <div class="card-location">
+            <i class="fa-solid fa-location-dot"></i>
+          <div class="card-capt">
+            <h3>Bali</h3>
+            <p>Travel wisata Bali.<br>
+            Kunjungi cagar budaya di Bali dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+        
+        <div class="card-location">
+            <i class="fa-solid fa-location-dot"></i>
+          <div class="card-capt">
+            <h3>Japan</h3>
+            <p>Travel dan wisata di Japan.<br>
+            Kunjungi cagar budaya dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+        
+        <div class="card-location">
+            <i class="fa-solid fa-location-dot"></i>
+          <div class="card-capt">
+            <h3>Singapore</h3>
+            <p>Travel dan wisata di Singapore.<br>
+            Kunjungi cagar budaya dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+        <span><hr></span>
+        
+        <div class="card-location">
+            <i class="fa-solid fa-star"></i>
+          <div class="card-capt">
+            <h3>Bandung</h3>
+            <p>Travel dan wisata di Bandung.<br>
+            Kunjungi cagar budaya dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+        
+        <div class="card-location">
+            <i class="fa-solid fa-star"></i>
+          <div class="card-capt">
+            <h3>Surabaya</h3>
+            <p>Travel dan wisata di Surabaya.<br>
+            Kunjungi cagar budaya dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+        
+        <div class="card-location">
+            <i class="fa-solid fa-star"></i>
+          <div class="card-capt">
+            <h3>Lombok</h3>
+            <p>Travel dan wisata di Lombok.<br>
+            Kunjungi cagar budaya dan<br> kuliner yang menarik</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--Closing headline-->
+      <section class="container-closing" id="callUs">
+        <h1>Perjalanan wisata menanti anda. Pesan sekarang dan mulailah petualangan selanjutnya!</h1>
+        <p>Kami telah  melakukan perjalanan ke berbagai tempat, baik lokal maupun mancanegara dengan destinasi wisata yang menakjubkan. Silahkan klik tombol dibawah jika anda tertarik!</p>
+        <button type="submit">Call to Action</button>
+      </section>
+      
+      <!--Footer section-->
+      <footer>
+        <a href="#home" id="footer-brand">Travel</a>
+        <p>Created by <a href="#home">Mangandaralam Sakti</a><br>
+        © 2023</p>
+      </footer>
+      
+      <script src="js/script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,365 @@
+/* Variabel for theme */
+:root {
+  --bg-navbar: #068FFF;
+  --text-white: #fff;
+  --subColor-content: #EEEEEE;
+  --footer: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+header {
+  background-color: var(--bg-navbar);
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-white);
+  font-family: 'Lumanosimo', cursive;
+  cursor: pointer;
+}
+header #linkNav {
+  color: var(--text-white);
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+}
+
+nav {
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul a {
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+}
+nav ul a.active {
+  color: red;
+}
+
+/* Section home */
+.home {
+  padding: 15px;
+}
+
+.home .heading-travel {
+  padding: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+.home .heading-travel h1 {
+  font-family: 'Poppins', sans-serif;
+}
+.home .heading p {
+  font-family: 'Poppins', sans-serif;
+  color: #454545;
+}
+
+.main-layout {
+  display: block;
+}
+.main-layout .banner {
+  padding: 10px;
+}
+.banner .banner-img img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.banner .banner-testimoni {
+  padding: 25px;
+}
+.banner-testimoni p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.banner .testimoni {
+  padding-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.testimoni i {
+  padding: 15px;
+  font-size: 20px;
+  background-color: var(--subColor-content);
+  border-radius: 100%;
+  color: black;
+}
+.testimoni .capt h6 {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+.testimoni .capt p {
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  color: #454545;
+}
+
+.banner .banner-feature {
+  margin-top: 30px;
+}
+.banner .feature-opt {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+} 
+.banner-feature h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+.banner-feature .feature-opt span {
+  display: flex;
+  align-items: center;
+  max-height: 14px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--subColor-content);
+  border-radius: 100%;
+  color: black;
+}
+.banner-feature .feature-opt p {
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.form-layout {
+  padding: 5px; 
+}
+.form-layout .form-validation {
+  padding: 30px;
+  background-color: var(--subColor-content);
+  border-radius: 5px;
+}
+.form-layout .form-validation h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+}
+
+.form-layout .form-validation p {
+  font-family: 'Poppins', sans-Serif;
+  padding-top: 15px;
+}
+
+.form-layout form {
+  margin-top: 30px;
+  line-height: 45px;
+}
+.form-layout form label {
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+}
+.form-layout form input {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #a8a1a1;
+  border-radius: 3px;
+}
+form .select-container {
+  display: flex;
+}
+form .select-container .select-box {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #a8a1a1;
+  border-radius: 3px;
+  background-color: var(--text-white);
+  appearance: none;
+}
+
+form .icon-container {
+  border: 1px solid #a8a1a1;
+  background-color: var(--text-white);
+  border-radius: 0 3px 3px 0;
+  padding: 5px;
+}
+form button {
+  background-color: #131c2a;
+  width: 99%;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+}
+
+#messegeName,
+#messegeEmail,
+#messegeOption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: red;
+}
+
+/* Our package section */
+.ourpackage {
+  margin-top: 25px;
+  padding: 40px;
+  background-color: var(--subColor-content);
+}
+.ourpackage h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 35px;
+}
+.container-location .card-location {
+  width: 28%;
+  display: flex;
+  gap: 15px;
+  line-height: 20px;
+}
+.card-location i {
+  display: flex;
+  align-items: center;
+  max-height: 15px;
+  padding: 14px;
+  background-color: var(--subColor-content);
+  color: black;
+  border-radius: 100%;
+}
+.card-location .card-capt h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+.card-location .card-capt p {
+  margin-top: 10px;
+  font-family: 'Quicksand', sans-serif;
+  color: #969696;
+}
+.container-location span {
+  width: 100%;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-location hr {
+  width: 20%;
+}
+
+/* Closing headline */
+.container-closing {
+  padding: 40px;
+  border: 0.5px solid #a8a1a1;
+  text-align: center;
+}
+.container-closing h1 {
+  font-family: 'Poppins', sans-serif;
+}
+.container-closing p {
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 15px;
+  color: #969696;
+}
+.container-closing button {
+  background-color: #131c2a;
+  width: 50%;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+}
+
+/* Footer section */
+footer {
+  padding: 30px;
+  border: 0.5px solid #a8a1a1;
+  text-align: center;
+  background-color: var(--footer);
+}
+footer #footer-brand {
+  text-decoration: none;
+  font-family: 'Lumanosimo', cursive;
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--text-white);
+}
+footer p  {
+  font-family: 'Quicksand', sans-serif;
+  color: #969696;
+}
+footer a {
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color: var(--bg-navbar);
+}
+
+@media screen and (min-width: 600px) {
+  header button {
+    display: none;
+  }
+  .main-layout {
+    display: flex;
+  }
+  .container-closing button {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: none; 
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    background-color: #fff;
+    padding: 10px;
+    line-height: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 9999;
+    transition: all .2s ease;
+  }
+  nav ul.phoneDevice {
+    display: block;
+  }
+  header #linkNav {
+    color: black;
+  }
+  header #linkNav:hover {
+    color: var(--bg-navbar);
+    transition: all .2s ease;
+  }
+  
+  .container-location .card-location {
+    width: 100%;
+  }
+} 
